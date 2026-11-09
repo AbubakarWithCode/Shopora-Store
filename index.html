@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#131921"><title>Shopora — Online Shopping</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://images.unsplash.com"></head>
+<body>
+<div class="topline">Today's deals <span>·</span> Fast delivery <span>·</span> Easy returns <span class="top-right">Welcome to Shopora</span></div>
+<header class="header">
+ <a class="logo" href="#"><span>shopora</span><b>✦</b></a>
+ <button class="deliver" aria-label="Delivery location"><small>Deliver to</small><strong>Pakistan ▾</strong></button>
+ <form class="search" id="searchForm"><select id="categorySelect" aria-label="Category"><option value="all">All</option><option>Electronics</option><option>Home</option><option>Fashion</option><option>Beauty</option><option>Sports</option></select><input id="searchInput" placeholder="Search Shopora" autocomplete="off"><button aria-label="Search">⌕</button></form>
+ <button class="head-link account" id="accountBtn"><small>Hello, sign in</small><strong>Account & Lists ▾</strong></button>
+ <button class="head-link returns"><small>Returns</small><strong>& Orders</strong></button>
+ <button class="cart" id="cartBtn"><span class="cart-icon">🛒<i id="cartCount">0</i></span><b>Cart</b></button>
+</header>
+<nav class="nav"><button class="nav-all" id="allMenu">☰ All</button><a href="#deals">Today's Deals</a><a href="#products">Best Sellers</a><a href="#products">New Arrivals</a><a href="#categories">Categories</a><a href="#footer">Customer Service</a><span class="nav-promo">Mega Sale — Up to 50% off</span></nav>
+<main>
+<section class="hero" id="hero"><div class="hero-copy"><p class="eyebrow">THE EVERYDAY SHOPPING EVENT</p><h1>Big finds.<br><em>Better prices.</em></h1><p>Discover the things you love, all in one place.</p><a class="hero-cta" href="#products">Shop the collection <span>→</span></a><div class="hero-dots"><i></i><i></i><i></i></div></div><div class="hero-art"><div class="hero-orbit"></div><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&q=85" alt="Red sneaker"></div><div class="hero-tag">WEEKLY<br><b>DEALS</b><span>UP TO 50% OFF</span></div></section>
+<div class="benefits"><div>🚚 <span><b>Fast delivery</b><small>To your doorstep</small></span></div><div>↩️ <span><b>Easy returns</b><small>Shop with confidence</small></span></div><div>🔒 <span><b>Secure checkout</b><small>Your data stays safe</small></span></div><div>💬 <span><b>We're here to help</b><small>Customer support</small></span></div></div>
+<section class="section" id="categories"><div class="section-head"><div><p class="eyebrow">EXPLORE THE STORE</p><h2>Shop by category</h2></div><a href="#products">View all <span>→</span></a></div><div class="categories">
+<a class="category c1" href="#products" data-filter="Electronics"><span>01 / TECH</span><b>Electronics</b><small>Upgrade your everyday →</small><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Headphones"></a>
+<a class="category c2" href="#products" data-filter="Fashion"><span>02 / STYLE</span><b>Fashion</b><small>Find your next look →</small><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&q=80" alt="Fashion"></a>
+<a class="category c3" href="#products" data-filter="Home"><span>03 / LIVING</span><b>Home & Living</b><small>Make room for comfort →</small><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&q=80" alt="Home decor"></a>
+<a class="category c4" href="#products" data-filter="Beauty"><span>04 / CARE</span><b>Beauty</b><small>A little self-care →</small><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80" alt="Beauty products"></a>
+</div></section>
+<section class="deal-banner" id="deals"><div><p class="eyebrow">LIMITED-TIME OFFERS</p><h2>Good things don't<br>wait around.</h2><p>Fresh deals, handpicked for you.</p><a href="#products">Explore today's deals →</a></div><div class="deal-stamp">HOT<br><b>DEALS</b><span>JUST FOR YOU</span></div></section>
+<section class="section products-section" id="products"><div class="section-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2 id="productHeading">Popular right now</h2></div><div class="product-controls"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="Electronics">Tech</button><button class="filter" data-filter="Home">Home</button><button class="filter" data-filter="Fashion">Style</button></div></div><div class="product-grid" id="productGrid"></div></section>
+<section class="newsletter"><div><p class="eyebrow">THE SHOPORA EDIT</p><h2>A little something<br>for your inbox.</h2><p>New drops, exclusive offers and things worth knowing.</p></div><form id="newsletterForm"><input type="email" placeholder="Your email address" required><button>Join the list →</button><small id="newsletterMsg">No spam. Just the good stuff.</small></form></section>
+</main>
+<footer id="footer"><a class="logo" href="#"><span>shopora</span><b>✦</b></a><p>Thoughtful finds for everyday life.</p><div class="footer-links"><a href="#products">Shop</a><a href="#categories">Categories</a><a href="#">About us</a><a href="#">Help & support</a></div><small>© 2026 Shopora. A demo shopping experience.</small></footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="overlay" id="overlay"><aside class="drawer"><div class="drawer-head"><h3 id="drawerTitle">Your cart</h3><button id="closeDrawer">✕</button></div><div id="drawerBody"></div></aside></div>
+<script src="app.js"></script></body></html>
